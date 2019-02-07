@@ -1,12 +1,10 @@
 <h1><%= @product["name"] %></h1>
 <h3>Description: <%= @product["description"]%></h3>
-<h3>Is this discounted: <%= @product["is_discounted?"]%></h3>
+<h3>Is this discounted: <%= @product["is_discounted"]%></h3>
 
-<h4>Price: </h4>
- <ul>
-   <%= @product["formatted_prices"]["price"]%>
-   <%= @product["formatted_prices"]["tax"]%>
-   <%= @product["formatted_prices"]["total"]%>
- </ul>
+<h4>Price: <%= @product["formatted_prices"]["price"]%></h4>
+<h4>Tax: <%= @product["formatted_prices"]["tax"]%></h4>
+<h4>Total: <%= @product["formatted_prices"]["total"]%></h4>
+
 
 <a href="/client/products">Home</a>
